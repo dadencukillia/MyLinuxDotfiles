@@ -6,7 +6,7 @@ Neovim config files
 ### One line command
 You can perform all installation steps automatically with the following command (so you can skip the **Packages** and **Settings** sections):
 ```sh
-curl https://github.com/dadencukillia/MyLinuxDotfiles/blob/main/nvim-auto-install.sh | sh
+curl https://raw.githubusercontent.com/dadencukillia/MyLinuxDotfiles/main/nvim-auto-install.sh | sh
 ```
 
 ### Packages
