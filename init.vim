@@ -60,15 +60,12 @@ call plug#end()
 set termguicolors
 lua require("bufferline").setup({})
 
-nnoremap <C-]> :ALEGoToDefinition<cr>
-nnoremap <C-[> :ALEFindReferences<cr>
-nnoremap <C-h> :ALEHover<cr>
 nnoremap <C-s> :w<CR>
 nnoremap <C-e> :NERDTreeToggle<cr>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap gb :bNext<cr>
-nnoremap gB :bprevious<cr>
+nnoremap gb :bnext<cr>
+nnoremap gB :bNext<cr>
 :tnoremap <Esc> <C-\><C-n>
 
 colorscheme catppuccin
