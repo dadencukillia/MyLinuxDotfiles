@@ -1,3 +1,3 @@
 #!/bin/sh
 
-(sudo pacman -S --noconfirm neovim git ripgrep gcc) && (sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim') && (curl -sL install-node.vercel.app/lts | bash) && (rm -rf ~/.config/nvim/*) && (mkdir -p ~/.config/nvim)  && (git clone --branch nvim https://github.com/dadencukillia/MyLinuxDotfiles.git ~/.config/nvim) && (nvim -c "PlugInstall") && (echo "Succeeded")
+(sudo pacman -S --noconfirm neovim git ripgrep gcc) && (sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim') && (curl -sL install-node.vercel.app/lts | bash) && (rm -rf ~/.config/nvim) && (mkdir -p ~/.config/nvim)  && (git clone --branch nvim https://github.com/dadencukillia/MyLinuxDotfiles.git ~/.config/nvim) && (nvim -c "PlugInstall") && (echo "Succeeded")
