@@ -12,7 +12,7 @@ curl https://raw.githubusercontent.com/dadencukillia/MyLinuxDotfiles/main/nvim-a
 ### Packages
 - Neovim:
 ```sh
-sudo pacman -S neovim gcc git
+sudo pacman -S neovim
 ```
 - vim-plug ([If the following command does not work](https://github.com/junegunn/vim-plug?tab=readme-ov-file#unix-linux)):
 ```bash
@@ -25,6 +25,10 @@ curl -sL install-node.vercel.app/lts | bash
 - Ripgrep (for the "telescope" plugin): 
 ```sh
 sudo pacman -S ripgrep
+```
+- Other required packages:
+```sh
+sudo pacman -S gcc git
 ```
 
 ### Configs
