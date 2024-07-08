@@ -12,7 +12,7 @@ curl https://raw.githubusercontent.com/dadencukillia/MyLinuxDotfiles/main/nvim-a
 ### Packages
 - Neovim:
 ```sh
-sudo pacman -S neovim
+sudo pacman -S neovim gcc git
 ```
 - vim-plug ([If the following command does not work](https://github.com/junegunn/vim-plug?tab=readme-ov-file#unix-linux)):
 ```bash
@@ -30,11 +30,11 @@ sudo pacman -S ripgrep
 ### Configs
 - Create nvim's config folder
 ```sh
-mkdir -p ~/.config/nvim
+rm -rf ~/.config/nvim/* && mkdir -p ~/.config/nvim
 ```
-- Clone nvim's config files for this git (make sure if you installed `git`)
+- Clone nvim's config files from this repository
 ```sh
-rm -rf ~/.config/nvim/* && git clone --branch nvim https://github.com/dadencukillia/MyLinuxDotfiles.git ~/.config/nvim
+git clone --branch nvim https://github.com/dadencukillia/MyLinuxDotfiles.git ~/.config/nvim
 ```
 - Join into nvim and skip all warnings and errors
 ```sh
