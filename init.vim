@@ -38,6 +38,8 @@ Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/mg979/vim-visual-multi'
 Plug 'https://github.com/neoclide/coc.nvim', { 'branch': 'release' }
 
+Plug 'dense-analysis/ale'
+
 Plug 'preservim/nerdtree'
 
 Plug 'nvim-lua/plenary.nvim'
