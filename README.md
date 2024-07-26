@@ -5,7 +5,7 @@ Dotfiles for Arch Linux
 ## Config Files:
 - 🛠️ Hyprland (**Not aviable yet**)
 - ✅ [Neovim](https://github.com/dadencukillia/MyLinuxDotfiles/tree/nvim)
-- 🛠️ Terminal (**Not aviable yet**)
+- ✅ [Terminal](https://github.com/dadencukillia/MyLinuxDotfiles/tree/terminal)
 
 ## OS Info
 - 🐧 OS: [Arch Linux](https://archlinux.org/)
