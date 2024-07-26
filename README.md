@@ -59,10 +59,12 @@ Well, now you have autocomplete and highlighting, so writing code should be easi
 
 ## Hotkeys
 - `Ctrl+S` - save the opened file
-- `Ctrl+E` - toggle the file explorer
+- `Space+E` - toggle the file explorer
 - `Space+ff` - find a file by name
 - `Space+fg` - find a file by content
+- `Space+t` - open a terminal window
 - `Ctrl+y` - accept autocompletion
+- `Ctrl+h` - show code hint
 - `gb` - go through the buffer (tabs that are created by the file explorer using the Enter key) to the right
 - `gB` - go through the buffer (tabs that are created by the file explorer using the Enter key) to the left
 - `gcc` or `gc` - comment a code fragment

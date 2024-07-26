@@ -10,28 +10,11 @@
 :set formatoptions-=t
 :let mapleader=" "
 
-let g:airline_theme='deus'
-let g:airline#extensions#tabline#enabled = 0
-
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
-let g:airline_symbols.maxlinenr = ''
-let g:airline_symbols.dirty='⚡'
-
 " Plugins
 
 call plug#begin()
+
+Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
 
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/tpope/vim-commentary'
@@ -40,16 +23,14 @@ Plug 'https://github.com/neoclide/coc.nvim', { 'branch': 'release' }
 
 Plug 'dense-analysis/ale'
 
-Plug 'preservim/nerdtree'
+Plug 'nvim-tree/nvim-tree.lua'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 
-Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
@@ -62,12 +43,16 @@ call plug#end()
 set termguicolors
 lua require("bufferline").setup({})
 
+nnoremap <C-]> :ALEGoToDefinition<cr>
+nnoremap <C-[> :ALEFindReferences<cr>
+nnoremap <C-h> :ALEHover<cr>
 nnoremap <C-s> :w<CR>
-nnoremap <C-e> :NERDTreeToggle<cr>
+nnoremap <leader>e :NvimTreeToggle<cr>
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap gb :bnext<cr>
 nnoremap gB :bNext<cr>
+nnoremap <leader>t :bel horizontal terminal<cr>
 :tnoremap <Esc> <C-\><C-n>
 
 colorscheme catppuccin
