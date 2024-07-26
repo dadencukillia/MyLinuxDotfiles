@@ -28,7 +28,7 @@ sudo pacman -S ripgrep
 ```
 - Other required packages:
 ```sh
-sudo pacman -S gcc git
+sudo pacman -S gcc git ttf-jetbrains-mono-nerd
 ```
 
 ### Configs
