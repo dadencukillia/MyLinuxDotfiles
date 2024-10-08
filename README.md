@@ -11,7 +11,7 @@ Dotfiles for Arch Linux
 - 🐧 OS: [Arch Linux](https://archlinux.org/)
 - 🚂 DE: [Hyprland](https://hyprland.org/)
 - 🪟 WM: [sway](https://swaywm.org/)
-- 🖌️ Theme: [Dracula](https://draculatheme.com/gtk)
+- 🖌️ Theme: [cattpuccin GTK](https://github.com/catppuccin/gtk)
 - ⌨️ Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
 - 📂 File Explorer: [thunar](https://docs.xfce.org/xfce/thunar/start)
 - 🧑🏼‍💻 Editor: [neovim](https://neovim.io/)
